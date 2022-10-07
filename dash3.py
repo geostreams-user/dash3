@@ -24,7 +24,7 @@ industry = st.sidebar.selectbox(
 )
 
 category = st.sidebar.multiselect(
-    "Select Relevant Category:",
+    "Select Relevant Category:\n*Please note that if a there is no data on a selected category for your specific industry, no changes will be made",
     options = list(df["Category"].unique()),
     default = "Other"
 )
@@ -68,9 +68,9 @@ st.markdown("---")
 #    xaxis = (dict(showgrid=False))
 #)
 #st.plotly_chart(fig_emissions)
-
-
-st.markdown("---")
+#
+#
+#st.markdown("---")
 
 
 # Emission Pie Chart
