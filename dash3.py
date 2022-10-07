@@ -29,8 +29,20 @@ category = st.sidebar.multiselect(
     default = "Other"
 )
 
-warning = st.sidebar.text(
+warning1 = st.sidebar.text(
     "*Please note that if a there is no data on a selected category for your specific industry, no changes will be made"
+)
+
+warning2 = st.sidebar.text(
+    "on a selected category for your specific industry, no changes will be made"
+)
+
+warning3 = st.sidebar.text(
+    "for your specific industry, no changes will be made"
+)
+
+warning3 = st.sidebar.text(
+    "changes will be made"
 )
 
 df_selection = df.query(
