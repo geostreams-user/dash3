@@ -95,7 +95,7 @@ fig_sector = px.pie(
     hole = 0.9,
     names = scope_by_category.index,
     values= "Percentage",
-    title = "<b>2019 Scope 3 Breakdown</b>"
+    title = "<b>2021 Scope 3 Breakdown</b>"
 )
 st.plotly_chart(fig_sector)
 
