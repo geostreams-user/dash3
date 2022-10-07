@@ -24,14 +24,14 @@ industry = st.sidebar.multiselect(
     default = "Agricultural Commodities"
 )
 
-rel_cat = st.sidebar.multiselect(
+category = st.sidebar.multiselect(
     "Select Relevant Category:",
     options = list(df["2021_Relevant_Scope_3_Categories"].unique()),
     default = "Other"
 )
 
 df_selection = df.query(
-    "Industry == @industry & 2021_Relevant_Scope_3_Categories == @rel_cat"
+    "Industry == @industry & Category == @category"
 )
 
 #df = df.astype(str)
