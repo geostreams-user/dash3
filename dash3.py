@@ -26,7 +26,7 @@ industry = st.sidebar.multiselect(
 
 category = st.sidebar.multiselect(
     "Select Relevant Category:",
-    options = list(df["2021_Relevant_Scope_3_Categories"].unique()),
+    options = list(df["Category"].unique()),
     default = "Other"
 )
 
