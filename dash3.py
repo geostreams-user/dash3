@@ -34,16 +34,13 @@ warning1 = st.sidebar.text(
 )
 
 warning2 = st.sidebar.text(
-    "on a selected category"
+    "on a selected category for your"
 )
 
 warning3 = st.sidebar.text(
-    "for your specific industry, no"
+    "specific industry, no changes are made"
 )
 
-warning3 = st.sidebar.text(
-    "changes will be made"
-)
 
 df_selection = df.query(
     "Industry == @industry & Category == @category"
