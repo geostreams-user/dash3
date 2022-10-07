@@ -43,7 +43,7 @@ st.markdown("<h1 style='text-align: center; color: black;'>- Information Dashboa
 st.markdown("##")
 
 # KPI's
-total_percentage = int((df_selection["Percentage_Makeup_Total_Emissions"]).sum())
+total_percentage = int((df_selection["Percentage"]).sum())
 
 st.markdown("<h2 style='text-align: center; color: grey;'>Selected 2021 Scope 3 Emissions Makeup (tonnes):</h2>", unsafe_allow_html=True)
 st.subheader(f"{total_percentage:,}%")
@@ -76,13 +76,13 @@ st.markdown("---")
 
 # Emission Pie Chart
 scope_by_category = (
-    df_selection.groupby(by=["2021_Relevant_Scope_3_Categories"]).sum()[["Percentage_Makeup_Total_Emissions"]].sort_values(by="Percentage_Makeup_Total_Emissions")
+    df_selection.groupby(by=["Category"]).sum()[["Percentage"]].sort_values(by="Percentage")
 )
 fig_sector = px.pie(
     scope_by_category,
     hole = 0.9,
     names = scope_by_category.index,
-    values= "Percentage_Makeup_Total_Emissions",
+    values= "Percentage",
     title = "<b>2019 Scope 3 Breakdown</b>"
 )
 st.plotly_chart(fig_sector)
