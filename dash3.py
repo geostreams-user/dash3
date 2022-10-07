@@ -30,15 +30,15 @@ category = st.sidebar.multiselect(
 )
 
 warning1 = st.sidebar.text(
-    "*Please note that if a there is no data on a selected category for your specific industry, no changes will be made"
+    "*Please note that if a there is no data"
 )
 
 warning2 = st.sidebar.text(
-    "on a selected category for your specific industry, no changes will be made"
+    "on a selected category"
 )
 
 warning3 = st.sidebar.text(
-    "for your specific industry, no changes will be made"
+    "for your specific industry, no"
 )
 
 warning3 = st.sidebar.text(
