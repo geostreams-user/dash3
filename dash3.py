@@ -18,7 +18,7 @@ st.set_page_config(page_title = "Scope 3 Dashboard",
 # --------- SIDEBAR --------- #
 
 st.sidebar.header("Please filter here:")
-industry = st.sidebar.multiselect(
+industry = st.sidebar.selectbox(
     "Select Industry:",
     options = list(df["Industry"].unique()),
     default = "Agricultural Commodities"
