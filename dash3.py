@@ -96,7 +96,7 @@ fig_sector = px.pie(
     names = scope_by_category.index,
     values= "Percentage",
     title = "<b>2021 Scope 3 Breakdown</b>",
-    color_discrete_sequence=px.colors.sequential.PuBu
+    color_discrete_sequence=px.colors.sequential.Purp
 )
 st.plotly_chart(fig_sector)
 
