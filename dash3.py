@@ -57,7 +57,7 @@ st.markdown("##")
 # KPI's
 total_percentage = int((df_selection["Percentage"]).sum())
 
-st.markdown("<h2 style='text-align: center; color: grey;'>Selected 2021 Scope 3 Emissions Makeup (tonnes):</h2>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: grey;'>Selected 2021 Scope 3 Emissions Makeup:</h2>", unsafe_allow_html=True)
 st.subheader(f"{total_percentage:,}%")
 
 st.markdown("---")
