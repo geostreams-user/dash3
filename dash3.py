@@ -11,9 +11,8 @@ df = pd.read_excel(
     usecols = "A:E",
     nrows = 500
 )
-st.image(image="Geostreams_Final_Logo_White_Transparent.png")
 st.set_page_config(page_title = "Scope 3 Dashboard",
-                   page_icon = ":bar_chart:")
+                   page_icon = "Geostreams_Final_Logo_White_Transparent.png")
 
 # --------- SIDEBAR --------- #
 
