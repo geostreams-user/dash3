@@ -50,6 +50,9 @@ df_selection = df.query(
 
 # --------- MAINPAGE --------- #
 
+img = Image.open("Geostreams_Final_Logo_White_Transparent.png")
+st.image(img)
+
 st.markdown("<h1 style='text-align: center; color: black;'>- Information Dashboard -</h1>", unsafe_allow_html=True)
 st.markdown("##")
 
