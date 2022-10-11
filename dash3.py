@@ -2,6 +2,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 import openpyxl as op
+from PIL import Image
 
 df = pd.read_excel(
     io = "Scope_3_Data.xlsx",
