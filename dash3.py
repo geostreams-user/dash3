@@ -57,7 +57,7 @@ df_selection = df.query(
 st.markdown("<h1 style='text-align: center; color: black;'>- Geostreams Scope 3 Dashboard -</h1>", unsafe_allow_html=True)
 st.markdown("##")
 
-col1, mid, col2, col3, col4, col5, col6, col7, col8, col9 = st.beta_columns([5, 5, 5, 5, 5, 5, 5, 5, 5])
+col1, mid, col2, col3, col4, col5, col6, col7, col8 = st.beta_columns([5, 5, 5, 5, 5, 5, 5, 5, 5])
 with col4:
     st.image("Geostreams_Final_Logo_White_Transparent.png", width = 100)
 
