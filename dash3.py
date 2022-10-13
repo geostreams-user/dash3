@@ -57,6 +57,13 @@ st.image(img, use_column_width = "auto")
 #st.markdown("<h1 style='text-align: center; color: black;'>- Information Dashboard -</h1>", unsafe_allow_html=True)
 #st.markdown("##")
 
+st.write("a logo and text next to eachother")
+col1, mid, col2 = st.beta_columns([1,1,20])
+with col1:
+    st.image("Geostreams_Final_Logo_White_Transparent.png", width=60)
+with col2:
+    st.write('A Name')
+
 # KPI's
 total_percentage = int((df_selection["Percentage"]).sum())
 
