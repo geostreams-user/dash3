@@ -58,13 +58,13 @@ st.markdown("<h1 style='text-align: center; color: black;'>- Geostreams Scope 3 
 st.markdown("##")
 
 col1, mid, col2, col3, col4 = st.beta_columns([10, 10, 10, 10, 10])
-with col4:
-    st.image("Geostreams_Final_Logo_White_Transparent.png", width = 120)
+with col2:
+    st.image("Geostreams_Final_Logo_White_Transparent.png", width = 130)
 
 # KPI's
 total_percentage = int((df_selection["Percentage"]).sum())
 
-#st.subheader("Selected 2021 Scope 3 Emissions Makeup:")
+#st.subheader("Selected 2021 Scope 3     Emissions Makeup:")
 
 col1, mid, col2 = st.beta_columns([8, 10, 12])
 with mid:
