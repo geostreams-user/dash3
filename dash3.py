@@ -54,8 +54,8 @@ df_selection = df.query(
 img = Image.open("Geostreams_Final_Logo_White_Transparent.png")
 st.image(img, use_column_width = "auto")
 
-st.markdown("<h1 style='text-align: center; color: black;'>- Information Dashboard -</h1>", unsafe_allow_html=True)
-st.markdown("##")
+#st.markdown("<h1 style='text-align: center; color: black;'>- Information Dashboard -</h1>", unsafe_allow_html=True)
+#st.markdown("##")
 
 # KPI's
 total_percentage = int((df_selection["Percentage"]).sum())
