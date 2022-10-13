@@ -58,7 +58,7 @@ col1, mid, col2, col3, col4 = st.beta_columns([10, 10, 10, 10, 10])
 with col4:
     st.image("Geostreams_Final_Logo_White_Transparent.png", width = 130)
 
-st.markdown("<h1 style='text-align: center; color: black;'>- GEOSTREAMS Scope 3 Emission Calculator -</h1>", unsafe_allow_html=True)
+st.markdown("<h2 style='text-align: center; color: black;'>- GEOSTREAMS Scope 3 Emission Calculator -</h2>", unsafe_allow_html=True)
 st.markdown("##")
 
 # KPI's
