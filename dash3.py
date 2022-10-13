@@ -64,11 +64,11 @@ with col2:
 # KPI's
 total_percentage = int((df_selection["Percentage"]).sum())
 
-#st.subheader("Selected 2021 Scope 3     Emissions Makeup:")
+#st.subheader("Selected 2021 Scope 3 Emissions Makeup:")
 
 col1, mid, col2 = st.beta_columns([8, 10, 12])
 with mid:
-    st.subheader("Selected 2021 Scope 3 Emissions makeup")
+    st.subheader("Selected 2021 Scope 3 Emissions makeup:")
 with col2:
     st.subheader(f"{total_percentage:,}%")
 
