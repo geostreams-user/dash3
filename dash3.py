@@ -57,9 +57,9 @@ df_selection = df.query(
 st.markdown("<h1 style='text-align: center; color: black;'>- Geostreams Scope 3 Dashboard -</h1>", unsafe_allow_html=True)
 st.markdown("##")
 
-col1, mid, col2, col3, col4 = st.beta_columns([5, 5, 20, 5, 5])
+col1, mid, col2, col3, col4 = st.beta_columns([10, 10, 10, 10, 10])
 with col4:
-    st.image("Geostreams_Final_Logo_White_Transparent.png", width = 100)
+    st.image("Geostreams_Final_Logo_White_Transparent.png", width = 120)
 
 # KPI's
 total_percentage = int((df_selection["Percentage"]).sum())
