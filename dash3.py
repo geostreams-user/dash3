@@ -58,9 +58,9 @@ df_selection = df.query(
 #st.markdown("##")
 
 st.write("Geostreams Scope 3 Dashboard")
-col1, mid, col2 = st.beta_columns([1,1,20])
+col1, mid, col2 = st.beta_columns([10, 15, 10])
 with col1:
-    st.image("Geostreams_Final_Logo_White_Transparent.png", width=200)
+    st.image("Geostreams_Final_Logo_White_Transparent.png", width = 80)
 with col2:
     st.write("Emissions Breakdown")
 
@@ -68,7 +68,9 @@ with col2:
 total_percentage = int((df_selection["Percentage"]).sum())
 
 st.markdown("<h2 style='text-align: center; color: grey;'>Selected 2021 Scope 3 Emissions Makeup:</h2>", unsafe_allow_html=True)
-st.subheader(f"{total_percentage:,}%")
+col1, mid, col2 = st.beta_columns([10, 15, 10])
+with mid:
+    st.subheader(f"{total_percentage:,}%")
 
 st.markdown("---")
 
